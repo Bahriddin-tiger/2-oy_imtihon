@@ -1,0 +1,108 @@
+.contact {
+    margin-bottom: 247px;
+}
+
+.max-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact__inner {
+    @include flex-starter;
+    background-image: url("../images/big_fish.png"), url("../images/fishbgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: 410px, 1463px 649px;
+    background-position: calc(50% + 493px) calc(50% + 5px);
+
+}
+
+.contact__iframe {
+    width: 462px;
+    height: 658px;
+    padding-top: -2px;
+}
+
+.contact__left-box {
+    width: 360px;
+    height: 658px;
+    padding: 62px;
+    padding-bottom: 74px;
+    padding-left: 166px;
+
+}
+
+// .contact__box {
+
+// }
+.contact__hiading {
+    @include title-text-global;
+    width: 360px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.contact__text {
+    @include title-text-global;
+    width: 314px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #949494;
+}
+
+// .contact__form {
+
+// }
+.contact__input-name {
+    width: 375px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    margin-bottom: 14px;
+    background-color: #FFFFFF;
+    border-radius: 0px;
+}
+
+.contact__input-email {
+    width: 375px;
+    height: 50px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    margin-bottom: 14px;
+}
+
+.contact__input-email:required {
+    border: 2px solid #90ee90;
+}
+
+.contact__input-email:invalid {
+    border: 2px solid #ff6347;
+
+}
+
+.contact__textarea {
+    width: 375px;
+    resize: none;
+    height: 165px;
+    margin-bottom: 30px;
+}
+
+.contact__button {
+    width: 226px;
+    padding: 15px 50px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #FFBD54;
+    border-radius: 0px;
+}

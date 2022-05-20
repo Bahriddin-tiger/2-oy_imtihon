@@ -1,0 +1,288 @@
+.site-header__top {
+    padding: 13px 0;
+
+}
+
+.top__inner {
+    @include flex-starter;
+    padding-left: 200px;
+}
+
+.top__address {
+    position: relative;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.top__address::before {
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    display: block;
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/home.svg");
+    background-size: contain;
+    content: "";
+}
+
+.top__list {
+    @include flex-starter;
+    @include list-global;
+    justify-content: space-between;
+
+}
+
+.top__item {
+    @include list-global;
+
+
+}
+
+.top__item:nth-child(1) {
+    margin-right: 150px;
+}
+
+.top__tel {
+    position: relative;
+    @include flex-starter;
+    @include list-global;
+}
+
+.top__tel::before {
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/telephone.svg");
+    background-size: contain;
+    content: "";
+}
+
+.tel__item {
+    @include list-global;
+    display: flex;
+    align-items: center;
+}
+
+.tel__span {
+    width: 4px;
+    height: 4px;
+    margin-right: 9px;
+    border-radius: 50%;
+    background-color: #FFBD54;
+
+}
+
+.tel__link {
+    @include link-global;
+    margin-right: 9px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+.tel__link:hover {
+    color: #FFBD54;
+
+}
+
+.tel__link:active {
+    color: #FFBD54;
+
+}
+
+.span {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000
+}
+
+.top__time {
+    @include flex-starter;
+    @include list-global;
+    position: relative;
+}
+
+.top__time::before {
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    display: block;
+    width: 16px;
+    height: 15px;
+    background-image: url("../images/calendar.svg");
+    background-size: contain;
+    content: "";
+}
+
+.time__item {
+    @include list-global;
+    margin-right: 18px;
+    margin-left: 9px;
+}
+
+.time__item:nth-child(2) {
+    margin-right: 0;
+
+}
+
+
+.time__box {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.site-header__bottom {
+    position: relative;
+    padding: 15px 0;
+    background-color: #FFFFFF;
+    border: 1px solid #F3F3F3;
+
+}
+
+.bottom__inner {
+    @include flex-starter;
+
+}
+
+.bottom__link {
+    @include link-global;
+
+
+}
+
+.bottom__link:hover {
+    opacity: 0.8;
+}
+
+.bottom__link:active {
+    opacity: 0.6;
+}
+
+.bottom__logo-img {
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+    width: 178px;
+    height: 86px;
+}
+
+.nav {
+    @include flex-starter;
+    margin-right: auto;
+    margin-left: 300px;
+}
+
+.nav__list {
+    position: relative;
+    @include list-global;
+    display: flex;
+    align-items: center;
+}
+
+.nav__list::before {
+    position: absolute;
+    top: -3px;
+    left: -30px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/fish.svg");
+    background-size: contain;
+    content: "";
+}
+
+.nav__item {
+    @include list-global;
+    position: relative;
+    margin-right: 55px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+
+.nav__item::before {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+    background-color: #FFBD54;
+    content: '';
+}
+
+.nav__item:hover::before {
+    height: 30%;
+    opacity: 0.8;
+}
+
+.nav__item:active::before {
+    height: 30%;
+    opacity: 0.6;
+}
+
+.nav__link {
+
+    @include link-global;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+
+}
+
+
+.bottom__left-link {
+    position: relative;
+    @include link-global;
+    padding-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333
+}
+
+.bottom__left-link::before {
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    display: block;
+    width: 23px;
+    height: 21px;
+    background-image: url("../images/finger.svg");
+    background-size: contain;
+    content: "";
+}
+
+.bottom__left-link::after {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+    background-color: #FFBD54;
+    content: '';
+}
+
+.bottom__left-link:hover::after {
+    height: 30%;
+    opacity: 0.8;
+}
+
+.bottom__left-link:active::after {
+    height: 30%;
+    opacity: 0.6;
+}

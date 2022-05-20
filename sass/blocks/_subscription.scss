@@ -1,0 +1,45 @@
+.subscription {
+    padding: 198px 0 153px;
+    background-image: url("../images/big_dog.png"), url("../images/dog_bgimg.png");
+    background-repeat: no-repeat;
+    background-size: 613px 481px, 1444px 308px;
+    background-position: calc(50% + 134px) calc(50% + 12px), calc(50%) calc(50% + 34px);
+    margin-bottom: 151px;
+}
+
+.subscription__inner {
+    width: 100%;
+    max-width: 550px;
+}
+
+.subscription__hiading {
+    @include title-text-global;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.subscription__form {
+    @include flex-starter;
+    justify-content: space-between;
+}
+
+.subscription__input {
+    padding: 18px 147px 12px 22px;
+    margin-right: 21px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscription__button {
+    padding: 15px 52px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius: 3px;
+}
